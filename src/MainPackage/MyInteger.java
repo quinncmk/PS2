@@ -20,22 +20,22 @@ public class MyInteger {
 	}
 
 	boolean isEven() {
-		if ((value % 2) == 0) {
+		if ((this.value % 2) == 0) {
 			return true;
 		}
 		return false;
 	}
 
 	boolean isOdd() {
-		if ((value % 2) != 0) {
+		if ((this.value % 2) != 0) {
 			return true;
 		}
 		return false;
 	}
 
 	boolean isPrime() {
-		for (int divisor = 2; divisor <= value / 2; divisor++) {
-			if (value % divisor == 0) {
+		for (int divisor = 2; divisor <= this.value / 2; divisor++) {
+			if (this.value % divisor == 0) {
 				return false;
 			}
 		}
@@ -89,14 +89,14 @@ public class MyInteger {
 	}
 
 	boolean equal(int specifiedValue) {
-		if (value == specifiedValue) {
+		if (this.value == specifiedValue) {
 			return true;
 		}
 		return false;
 	}
 
 	boolean equal(MyInteger integer) {
-		if (integer.getValue() == value) {
+		if (integer.getValue() == this.value) {
 			return true;
 		}
 		return false;
